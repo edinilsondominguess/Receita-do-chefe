@@ -44,10 +44,11 @@ nav a{
     font-size: 16pt;
 }
 nav a:hover{
-    background: linear-gradient(to right, #379b5a, #4ca173, #61968d, #738eb0, #8295c6);
+    background: linear-gradient(90deg, #FFA726, #FB8C00, #EF6C00);
     transition: 1s;
     border-radius: 9px ;
-    color: white;
+    color: black;
+    padding: 5px;
 }
 
 .explore{
@@ -79,9 +80,9 @@ footer {
 
 /* IMAGENS */
 ul.galeria{
-    width: 67vw;
-    height: 1300px;
-    margin: 0 auto;
+    width: 90vw;
+    height: 116vh;
+    margin: 0px auto;
     overflow: hidden;
     list-style: none;
     columns: 4;
@@ -90,12 +91,16 @@ ul.galeria li{
     float: left;
     width: 170px;
     height: 161px;
-    margin: 37px 12px;
+    margin: 53px 0px 0px 10px;
     border: 5px solid rgba(173, 171, 171, 0.63);
     border-radius: 100px;
     background-color: rgba(255, 255, 255, 0.986);
     box-shadow: 1px 1px 4px rgba(0,0,0,.4);
     transition: all .4s ease-in;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
 }
 ul.galeria li:hover{
     transform: scale(1.5);
@@ -106,10 +111,12 @@ ul.galeria li span{
     opacity: 0;
     color: white;
     text-shadow: 1px 1px 1px black;
-    background-color: rgba(31, 15, 255, 0.3);
+    /* background-color: rgba(31, 15, 255, 0.3); */
+    background: linear-gradient(to right, orange, rgba(255, 166, 0, 0.521),transparent);
     font-size: 10pt;
-    line-height: 27px;
+    /* line-height: 27px; */
     padding: 5px;
+    border-radius: 30px;
 }
 ul.galeria li:hover span{
     opacity: 1;
@@ -269,7 +276,7 @@ form {
     /* padding-left: 10px; */
     font-size: 13pt;
     /* margin-top: 62px; */
-    margin: 31px 100px;
+    margin: 31px 90px;
 }
 label {
     margin: 0px 20px;
@@ -304,12 +311,85 @@ button:hover {
     text-align: justify;
     width: 90%;
 }
+select,input{
+    width: 20%;
+    height: 30px;
+    margin: 20px auto;
+}
+
+/* PAGINA CONTATO */
+.h2-contato{
+    margin-left: 40px;
+}
+.informacoes-contato{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14pt;
+}
+.formulario-contato ul{
+    height: 20vh;
+}
+.informacoes-contato a{
+    text-decoration: none;
+    color: rgb(245, 242, 237);
+}
+.informacoes-contato li{
+    list-style: none;
+}
+.contato-box{
+    background-color: #8a8988a6;
+    width: 55vw;
+    margin: auto;
+    border-radius: 30px;
+    padding: 5px;
+}
+.contato-box h3:nth-child(1){
+    color: #ff7043;
+ }
+.contato-box h3:nth-child(2){
+    text-align: center;
+    color: #ff7043;
+ }
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: black;
+    font-weight: bolder;
+}
+#nome{
+    width: 30vw;
+    height: 20px;
+    margin: 10px auto;
+}
+#email{
+    width: 30vw;
+    height: 20px;
+    margin: 10px auto;
+}
+#mensagem{
+    width: 50vw;
+    height: 20vh;
+    margin: 10px auto;
+}
+button{
+    width: 20vw;
+    margin: 20px auto;
+}
 
 
 
 
 
-/* video em background */
+
+
+
+
+
 #videoBG{
     width: 100%;
     height: 100%;

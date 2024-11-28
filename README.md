@@ -1,2 +1,2 @@
-# Site-Oasis-de-Sabores
+# Site Receitas do Chefe
 Site de Culinarias (Trabalho Uninove)
