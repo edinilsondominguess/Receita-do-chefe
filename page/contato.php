@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['logado'])) {
+    header('Location: ../page/404.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -15,9 +22,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="receitas.html">Receitas</a></li>
-                <li><a href="contato.html">Contatos</a></li>
+                <li><a href="index.php">Início</a></li>
+                <li><a href="receitas.php">Receitas</a></li>
+                <li><a href="contato.php">Contatos</a></li>
             </ul>
         </nav>
     </header>
